@@ -26,5 +26,11 @@ class ViewController: UIViewController, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let SecondViewController = segue.destination as! SecondViewController
+        SecondViewController?.animal = animals
+
+        guard let selectedRow = tableView.indexPathForSelectedRow?.row else {return}
+    }
 }
 
