@@ -11,7 +11,7 @@ class ViewController: UIViewController, UITableViewDataSource{
 
     
     @IBOutlet weak var tableView: UITableView!
-    var animals: [String] = ["Panda", "Elephat", "Narwhale"]
+    var animals: [String] = ["Panda", "Elephant", "Narwhale"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
