@@ -16,7 +16,7 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        self.navigationItem.title = "Made by Nathan and Alec"
         nameLabel.text = animal
         imageView.image = UIImage(named: animal!)
         
